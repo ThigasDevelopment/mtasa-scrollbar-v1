@@ -3,6 +3,7 @@ API Scroll Bar interativa em DX.
 
 # Sobre
 API Criada para utilizar em suas gridlists mais facilmente. Resource aberto para alterações e aplicações em seus resources ```client - side```.
+Foi deixado 2 ```arquivos``` : `api-scrollbar.zip` e `scroll.lua`.
 
 # Functions
   - [dxCreateScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxcreatescrollbar)
@@ -11,6 +12,9 @@ API Criada para utilizar em suas gridlists mais facilmente. Resource aberto para
   - [dxDestroyScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxdestroyscrollbar)
     - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax-1) 
     - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-1) 
+  - [dxDestroyScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxgetpropertiesscrollbar)
+    - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax-2) 
+    - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-2) 
   
 # dxCreateScrollBar
 
@@ -69,7 +73,32 @@ bool dxDestroyScrollBar (identify)
 ### Example
 
 ```lua
+local identify = "scroll:items"
+
 addCommandHandler ("destroy", function ()
-    return (dxDestroyScrollBar ("scroll:items") and print ("Scroll Bar destruida com sucesso.") or print ("Ocorreu um erro ao destruir a Scroll Bar."))
+    return (dxDestroyScrollBar (identify) and print ("Scroll Bar destruida com sucesso.") or print ("Ocorreu um erro ao destruir a Scroll Bar."))
+end)
+```
+
+# dxGetPropertiesScrollBar
+
+### Syntax
+
+```lua
+table dxGetPropertiesScrollBar (identify)
+```
+
+### Example
+
+```lua
+local identify = "scroll:items"
+
+addCommandHandler ("get", function ()
+    local data = dxGetPropertiesScrollBar (identify)
+    if data and type (data) == "table" and next (data) then
+        iprint (data)
+        return
+    end
+    print ("Não existe nenhuma Scroll Bar com esse nome.")
 end)
 ```
