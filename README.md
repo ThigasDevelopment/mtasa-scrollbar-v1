@@ -12,7 +12,7 @@ Foi deixado 2 ```arquivos``` : `api-scrollbar.zip` e `scroll.lua`.
   - [dxDestroyScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxdestroyscrollbar)
     - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax-1) 
     - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-1) 
-  - [dxDestroyScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxgetpropertiesscrollbar)
+  - [dxGetPropertiesScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxgetpropertiesscrollbar)
     - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax-2) 
     - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-2) 
   
