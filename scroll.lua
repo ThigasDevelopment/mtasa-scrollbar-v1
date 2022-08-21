@@ -105,4 +105,4 @@ function dxClickScroll (button, state)
         scrollbar.elements[scrollbar.actual].using = false
         scrollbar.actual = false
     end
-end
+enda
