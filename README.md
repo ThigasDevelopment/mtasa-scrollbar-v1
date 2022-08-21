@@ -6,6 +6,8 @@ API Criada para utilizar em suas gridlists mais facilmente. Resource aberto para
 
 # Functions
   - [dxCreateScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxcreatescrollbar)
+    - [Syntax]() 
+    - [Example]() 
   - [dxDestroyScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxdestroyscrollbar)
   
 # dxCreateScrollBar
