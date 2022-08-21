@@ -142,7 +142,7 @@ function scrollValues (button)
     local data = scrollData.actual
     if button == "mouse_wheel_up" and (data - 1) > 0 then
         data = data - 1
-    elseif button == "mouse_wheel_down" and (data + 1) < (#texts - visibleValues) then
+    elseif button == "mouse_wheel_down" and (data + 1) < #texts then
         data = data + 1
     end
     dxUpdateScrollBarOffset (identify, data)
