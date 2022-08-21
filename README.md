@@ -3,7 +3,7 @@ API Scroll Bar interativa em DX.
 
 # Sobre
 API Criada para utilizar em suas gridlists mais facilmente. Resource aberto para alterações e aplicações em seus resources ```client - side```.
-Foi deixado 2 ```arquivos``` : `api-scrollbar.zip` e `scroll.lua`.
+Foi deixado 3 ```arquivos``` : `api-scrollbar.zip`, `scroll.lua` e `example.lua`.
 
 # Functions
   - [dxCreateScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxcreatescrollbar)
