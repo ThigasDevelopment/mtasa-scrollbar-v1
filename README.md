@@ -24,7 +24,7 @@ Foi deixado 3 ```arquivos``` : `api-scrollbar.zip`, `scroll.lua` e `example.lua`
 ### Syntax
 
 ```lua
-drawing dxCreateScrollBar (identify, x, y, width, height, colors, value, postGUI)
+drawing dxCreateScrollBar (identify, x, y, width, height, size, colors, value, postGUI)
 ```
 
 ### Example
