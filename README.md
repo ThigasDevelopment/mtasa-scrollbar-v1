@@ -44,6 +44,7 @@ local offsetX, offsetY = (screen.x - 15) / 2, (screen.y - 150) / 2
 
 addEventHandler ("onClientRender", getRootElement (), function ()
     dxCreateScrollBar ("scroll:items", offsetX, offsetY, 15, 150, 25, {using = {155, 155, 155, 255}, scroll = {255, 255, 255, 255}, background = {31, 31, 31, 255}}, (#texts - visibleValues) + 1, false)
+    
     local scrollData = dxGetPropertiesScrollBar ("scroll:items")
     if scrollData and type (scrollData) == "table" and next (scrollData) then
         local data = scrollData.actual
