@@ -14,7 +14,10 @@ Foi deixado 2 ```arquivos``` : `api-scrollbar.zip` e `scroll.lua`.
     - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-1) 
   - [dxGetPropertiesScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxgetpropertiesscrollbar)
     - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax-2) 
-    - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-2) 
+    - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-2)
+  - [dxUpdateScrollBarOffset](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxupdatescrollbaroffset)
+    - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax-3) 
+    - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-3) 
   
 # dxCreateScrollBar
 
@@ -101,4 +104,49 @@ addCommandHandler ("get", function ()
     end
     print ("Não existe nenhuma Scroll Bar com esse nome.")
 end)
+```
+
+# dxUpdateScrollBarOffset
+
+### Syntax
+
+```lua
+bool dxUpdateScrollBarOffset (identify, value)
+```
+
+### Example
+
+```lua
+local identify = "scroll:items"
+
+local texts = {
+    "Texto";
+    "Texto";
+    "Texto";
+    "Texto";
+    "Texto";
+    "Texto";
+    "Texto";
+    "Texto";
+    "Texto";
+    "Texto";
+}
+
+local visibleValues = 5;
+
+function scrollValues (button)
+    local scrollData = dxGetPropertiesScrollBar (identify)
+    if not scrollData then
+        return false
+    end
+    local data = scrollData.actual
+    if button == "mouse_wheel_up" and (data - 1) > 0 then
+        data = data - 1
+    elseif button == "mouse_wheel_down" and (data + 1) < (#texts - visibleValues) then
+        data = data + 1
+    end
+    dxUpdateScrollBarOffset (identify, data)
+end
+bindKey ("mouse_wheel_up", "down", scrollValues)
+bindKey ("mouse_wheel_down", "down", scrollValues)
 ```
