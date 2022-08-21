@@ -9,6 +9,8 @@ API Criada para utilizar em suas gridlists mais facilmente. Resource aberto para
     - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax) 
     - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example) 
   - [dxDestroyScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxdestroyscrollbar)
+    - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax-1) 
+    - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example-1) 
   
 # dxCreateScrollBar
 
@@ -57,13 +59,13 @@ end)
 
 # dxDestroyScrollBar
 
-Syntax
+### Syntax
 
 ```lua
 bool dxDestroyScrollBar (identify)
 ```
 
-Example
+### Example
 
 ```lua
 addCommandHandler ("destroy", function ()
