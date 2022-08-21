@@ -6,19 +6,19 @@ API Criada para utilizar em suas gridlists mais facilmente. Resource aberto para
 
 # Functions
   - [dxCreateScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxcreatescrollbar)
-    - [Syntax]() 
-    - [Example]() 
+    - [Syntax](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#syntax) 
+    - [Example](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#example) 
   - [dxDestroyScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxdestroyscrollbar)
   
 # dxCreateScrollBar
 
-Syntax
+### Syntax
 
 ```lua
 drawing dxCreateScrollBar (identify, x, y, width, height, colors, value, postGUI)
 ```
 
-Example
+### Example
 
 ```lua
 local screen = Vector2 (guiGetScreenSize ())
