@@ -3,7 +3,7 @@ API Scroll Bar interativa em DX.
 
 # Functions
   - [dxCreateScrollBar]()
-  - [dxDestroyScrollBar]()
+  - [dxDestroyScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxdestroyscrollbar)
   
 # dxCreateScrollBar
 
