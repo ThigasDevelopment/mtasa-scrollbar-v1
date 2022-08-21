@@ -17,7 +17,6 @@ end
 -- script's function
 function dxCreateScrollBar (identify, x, y, width, height, size, colors, values, postGUI)
     postGUI = (postGUI or false)
-    local actualScroll;
     if not scrollbar.elements[identify] then
         scrollbar.elements[identify] = {
             positions = {
