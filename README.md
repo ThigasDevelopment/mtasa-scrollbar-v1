@@ -1,5 +1,8 @@
-# scrollbar
+# scrollbar api resource
 API Scroll Bar interativa em DX.
+
+# Sobre
+API Criada para utilizar em suas gridlists mais facilmente. Resource aberto para alterações e aplicações em seus resources ```client - side```.
 
 # Functions
   - [dxCreateScrollBar](https://github.com/ThigasDevelopment/scrollbar/blob/main/README.md#dxcreatescrollbar)
