@@ -1,2 +1,2 @@
 # scrollbar
-API Scroll Bar interativa.
+API Scroll Bar interativa em DX.
